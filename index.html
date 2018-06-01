@@ -362,8 +362,7 @@
 
       
         
-          
-            <h3 id="AJAX原理"><a href="#AJAX原理" class="headerlink" title="AJAX原理"></a>AJAX原理</h3><h4 id="get接口"><a href="#get接口" class="headerlink" title="get接口:"></a>get接口:</h4><p>是用url的方式去传输的，体积小</p>
+          <h3 id="AJAX原理"><a href="#AJAX原理" class="headerlink" title="AJAX原理"></a>AJAX原理</h3><h4 id="get接口"><a href="#get接口" class="headerlink" title="get接口:"></a>get接口:</h4><p>是用url的方式去传输的，体积小</p>
 <h5 id="注：get很不安全！！！"><a href="#注：get很不安全！！！" class="headerlink" title="注：get很不安全！！！"></a>注：get很不安全！！！</h5><pre><code>input.onblur=function(){
     const  ajax=new XMLHttpRequest();                //创建ajax
     ajax.open(&apos;get&apos;,&apos;/get?user=&apos;+input.value);        //（请求方式,接口(url),是否异步（true））
@@ -372,18 +371,14 @@
         console.log(ajax.responseText);                //拿到数据返回值
     }
 }
-</code></pre><h4 id="post接口"><a href="#post接口" class="headerlink" title="post接口:"></a>post接口:</h4><p>一般常用在用户信息上、上传（传输一些大体积的文件），体积很大（理论上可以无限大），一般后端都会做限制</p>
-<h5 id="注：需要写请求头，相对于get会安全一点"><a href="#注：需要写请求头，相对于get会安全一点" class="headerlink" title="注：需要写请求头，相对于get会安全一点"></a>注：需要写请求头，相对于get会安全一点</h5><pre><code>input.onblur=function(){
-    const  ajax=new XMLHttpRequest();                //创建ajax
-    ajax.open(&apos;post&apos;,&apos;/post&apos;);                        //（请求方式,接口(url),是否异步（true））
-    ajax.setRequestHeader(&apos;Content-Type&apos;,&apos;application/x-www-form-urlencoded&apos;)    //请求头
-    ajax.send(&apos;user=&apos;+input.value);                    //发送
-    ajax.onload=function(){                            //等待服务器
-        console.log(ajax.responseText);                //拿到数据返回值
-    }
-}
 </code></pre>
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/06/01/AJAX原理/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
